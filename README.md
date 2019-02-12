@@ -19,6 +19,7 @@ For camera installation instruction [refer to this web site](https://www.raspber
   * _delete_wx.sh_ - runs once a day and deletes the video files created 2 days prior
 * One Python script
   * _video.py_ - records time-lapse in MP4, called from capture_wx.sh
+    * Note: If raspivid is used directly the first frames are highly over-exposed while auto-exposure makes adjustments. video.py records and throws away a few seconds of video to avoid this issue before recording the time-lapse.
 
 ## Installation
 * In /home/pi create a directory named _wx_video_
