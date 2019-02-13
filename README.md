@@ -26,3 +26,8 @@ For camera installation instruction [refer to this web site](https://www.raspber
 * Make sure _/var/www/html/wx_ exists and the current user has read and write permission
 * Place the three shell scripts and the video.py script in that directory
 * Run _crontab -e_ and place the final three lines from _crontab.txt_ into the crontab
+
+Once everything is installed and running visit your Pi's webserver IP and append one of these strings to access the files:
+* _wx/current.gif_ will display the most recent GIF (recorded every 10 minutes if you use my crontab entries)
+* _wx/current.mp4_ displays roughly 2 minutes of real time into a 10 second MP4 time lapse (also updated every 10 minutes)
+* _wx/current_hour.mp4_ displays a compilation of the previous hour's MP4 files (five 10 minute time lapses)
