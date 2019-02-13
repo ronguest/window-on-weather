@@ -12,7 +12,7 @@ You should have a web server configured as well as having enabled the camera. I 
 For camera installation instruction [refer to this web site](https://www.raspberrypi.org/documentation/usage/camera/README.md).
 
 ## Software Components
-* A crontab entry for root ("sudo crontab -e") to launch the necessary scripts on a schedule
+* crontab entries to launch the necessary scripts on a schedule
 * Three shell scripts
   * _capture_wx.sh_ - captures a series of GIF images then combines them into an animated GIF and calls video.py to create a separate MP4 time-lapse
   * _compile_wx.sh_ - runs once an hour and combines the previous hour's MP4 time-lapse into a single file
@@ -23,5 +23,6 @@ For camera installation instruction [refer to this web site](https://www.raspber
 
 ## Installation
 * In /home/pi create a directory named _wx_video_
+* Make sure _/var/www/html/wx_ exists and the current user has read and write permission
 * Place the three shell scripts and the video.py script in that directory
-* Run _sudo crontab -e_ and place the final three lines from _crontab.txt_ into the crontab
+* Run _crontab -e_ and place the final three lines from _crontab.txt_ into the crontab
