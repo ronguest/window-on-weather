@@ -31,3 +31,5 @@ Once everything is installed and running visit your Pi's webserver IP and append
 * _wx/current.gif_ will display the most recent GIF (recorded every 10 minutes if you use my crontab entries)
 * _wx/current.mp4_ displays roughly 2 minutes of real time into a 10 second MP4 time lapse (also updated every 10 minutes)
 * _wx/current_hour.mp4_ displays a compilation of the previous hour's MP4 files (five 10 minute time lapses)
+
+If your Pi has IP address 192.168.1.73 and your web server is using the default port then visiting _http://192.168.1.73/wx/current.gif_ with your browser should load the most recent GIF.
