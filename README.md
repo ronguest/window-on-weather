@@ -1,4 +1,4 @@
-# Time-lapse Video Project
+# Time-lapse Video Project for Raspberry Pi
 
 This project was created in order to collect time-lapse videos of the sky outside my house on a continuous basis (24/7). It could be used to collect time-lapse video of anything but this is the purpose for which it was built.
 
